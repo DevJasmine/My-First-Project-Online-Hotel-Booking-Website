@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+  height: 20%;
+  margin: 0px;
+}
+
+
+.slider-container {
+    background: linear-gradient(transparent, blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.slider {
+    width: 100%;
+    max-width: 100%;
+    height: 400px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+}
+.slides {
+    display: flex;
+    overflow-x: scroll;
+    position: relative;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+.slide:nth-of-type(even) {
+    background-color: rgb(250, 246, 212);
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    height: 400px;
+    margin-right: 0px;
+    box-sizing: border-box;
+    background: white;
+    transform-origin: center center;
+    transform: scale(1);
+    scroll-snap-align: center;
+}
+
+.slide__text {
+    align-items: center;
+    padding-top: 300px;
+    height: 400px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+    </style>
+</head>
+<body>
+    <div class="slider-container">
+        <div class="slider">
+          <div class="slides">
+            <div id="slides__1" class="slide">
+                <div>
+                <span class="slide__text"><img src="pop1.jpg" alt=""></span>
+                <span class="slide__text">Cool Place</span>
+                </div>
+              <a class="slide__prev" href="#slides__4" title="Next"></a>
+              <a class="slide__next" href="#slides__2" title="Next"></a>
+            </div>
+            <div id="slides__2" class="slide">
+                <div style="display: flex;">
+                    <span class="slide__text"><img src="pop1.jpg" alt=""></span>
+                    <span class="slide__text">Cool Place</span>
+                </div>
+              <a class="slide__prev" href="#slides__1" title="Prev"></a>
+              <a class="slide__next" href="#slides__3" title="Next"></a>
+            </div>
+            <div id="slides__3" class="slide">
+                <div style="display: flex;">
+                    <span class="slide__text"><img src="pop1.jpg" alt=""></span>
+                    <span class="slide__text">Cool Place</span>
+                  </div>
+              <a class="slide__prev" href="#slides__2" title="Prev"></a>
+              <a class="slide__next" href="#slides__4" title="Next"></a>
+            </div>
+            <div id="slides__4" class="slide">
+                <div style="display: flex;">
+                    <span class="slide__text"><img src="pop1.jpg" alt=""></span>
+                    <span class="slide__text">Cool Place</span>
+                  </div>
+              <a class="slide__prev" href="#slides__3" title="Prev"></a>
+              <a class="slide__next" href="#slides__5" title="Prev"></a>
+            </div>
+            <div id="slides__5" class="slide">
+                <div style="display: flex;">
+                    <span class="slide__text"><img src="pop1.jpg" alt=""></span>
+                    <span class="slide__text">Cool Place</span>
+                  </div>
+                <a class="slide__prev" href="#slides__4" title="Prev"></a>
+                <a class="slide__next" href="#slides__6" title="Prev"></a>
+              </div>
+              <div id="slides__4" class="slide">
+                <div style="display: flex;">
+                    <span class="slide__text"><img src="pop1.jpg" alt=""></span>
+                    <span class="slide__text">Cool Place</span>
+                  </div>
+                <a class="slide__prev" href="#slides__5" title="Prev"></a>
+                <a class="slide__next" href="#slides__1" title="Prev"></a>
+              </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <a href="https://alvarotrigo.com/blog/create-a-slider-with-pure-CSS/" target="_blank" class="read-article">
+        Read the article 👉
+      </a>
+
+      <div class="slider-container">
+        <div class="slider">
+          <div class="slides">
+            <div id="slides__1" class="slide">
+              <span class="slide__text">1</span>
+              <a class="slide__prev" href="#slides__4" title="Next"></a>
+              <a class="slide__next" href="#slides__2" title="Next"></a>
+            </div>
+            <div id="slides__2" class="slide">
+              <span class="slide__text">2</span>
+              <a class="slide__prev" href="#slides__1" title="Prev"></a>
+              <a class="slide__next" href="#slides__3" title="Next"></a>
+            </div>
+            <div id="slides__3" class="slide">
+              <span class="slide__text">3</span>
+              <a class="slide__prev" href="#slides__2" title="Prev"></a>
+              <a class="slide__next" href="#slides__4" title="Next"></a>
+            </div>
+            <div id="slides__4" class="slide">
+              <span class="slide__text">4</span>
+              <a class="slide__prev" href="#slides__3" title="Prev"></a>
+              <a class="slide__next" href="#slides__1" title="Prev"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <a href="https://alvarotrigo.com/blog/create-a-slider-with-pure-CSS/" target="_blank" class="read-article">
+        Read the article 👉
+      </a>
+
+      <div class="slider-container">
+        <div class="slider">
+          <div class="slides">
+            <div id="slides__1" class="slide">
+              <span class="slide__text">1</span>
+              <a class="slide__prev" href="#slides__4" title="Next"></a>
+              <a class="slide__next" href="#slides__2" title="Next"></a>
+            </div>
+            <div id="slides__2" class="slide">
+              <span class="slide__text">2</span>
+              <a class="slide__prev" href="#slides__1" title="Prev"></a>
+              <a class="slide__next" href="#slides__3" title="Next"></a>
+            </div>
+            <div id="slides__3" class="slide">
+              <span class="slide__text">3</span>
+              <a class="slide__prev" href="#slides__2" title="Prev"></a>
+              <a class="slide__next" href="#slides__4" title="Next"></a>
+            </div>
+            <div id="slides__4" class="slide">
+              <span class="slide__text">4</span>
+              <a class="slide__prev" href="#slides__3" title="Prev"></a>
+              <a class="slide__next" href="#slides__1" title="Prev"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <a href="https://alvarotrigo.com/blog/create-a-slider-with-pure-CSS/" target="_blank" class="read-article">
+        Read the article 👉
+      </a>
+</body>
+</html>
